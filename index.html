@@ -1,0 +1,126 @@
+<html>
+<head>
+
+    <script src="./lib/js/jquery-latest.js"></script>
+    <script src="./lib/js/jquery-ui-latest.js"></script>
+    <script src="./lib/js/jquery.layout-1.3.0.rc30.80.js"></script>
+    <script src="./lib/js/debug.js"></script>
+    <!-- <script src="./lib/js/FileSaver.min.js"></script> -->
+    <!-- <script src="https://syntagmatic.github.io/parallel-coordinates/examples/lib/d3.min.js"></script> -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css" />
+    <link rel="stylesheet" href="./lib/css/glyphicons.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <!-- links for jqwidgets -->
+    <!-- <link rel="stylesheet" href="../../lib/jqwidgets/styles/jqx.base.css" type="text/css" /> -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1 minimum-scale=1" /> -->
+    <!-- <script type="text/javascript" src="../../../scripts/jquery-1.12.4.min.js"></script> -->
+ 
+
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
+    <link rel="stylesheet" href="./lib/css/jquery-ui.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class="ui-layout-center">
+        <UL id='tab'>
+            <LI><a href="#tab_3"><SPAN></SPAN>Equilibrium in Politics</a></LI>
+            <LI><a href="#tab_1"><SPAN>Social State</SPAN></a></LI>
+            <LI><a href="#tab_2"><SPAN></SPAN>Social Class</a></LI>
+            <LI><a href="#tab_4"><SPAN></SPAN>Application & Example</a></LI>
+            <LI><a href="#tab_5"><SPAN></SPAN>Reference</a></LI>
+            <LI><a href="#tab_0"><SPAN></SPAN>...</a></LI>
+        </UL>
+        <div class="ui-layout-content">
+            <div id="tab_1">
+                <svg id = 'svg0'> </svg>
+                <div id = smallSVGs>
+                    <svg class = 'aggState' id='svg1' onmouseover = "featureMode(1)"></svg>
+                    <svg class = 'aggState' id='svg2' onmouseover = "featureMode(2)"></svg>
+                    <svg class = 'aggState' id='svg3' onmouseover = "featureMode(3)"></svg>
+                    <svg class =  'aggCtrl' id='svg4' onmouseout = "featureMode(4)"></svg>
+                    <div id="note"></div>
+                </div>
+                <!-- <br><div id="note"></div> -->
+            </div>
+            <div id="tab_2">
+                <br> ... to be built ...
+            </div>
+            <div id="tab_3">
+                <svg id = 'svgCurve'> </svg>
+            </div>
+            <div id="tab_4">
+                <br>... to be built ...
+            </div>
+            <div id="tab_5">
+                <select id="sldAction" onchange="sldAction()">
+                    <option selected="selected"> ... </option>
+                    <option> ... </option>
+                    <option> ... </option>
+                    <option> ... </option>
+                    <option> ... </option>
+                    <option> ... </option>
+                    <option> ... </option>
+                    <option> ... </option>
+                </select> <br>
+                <!-- <iframe id="pdf" src="../tpp/xls/SLDs-AESO-2020-Long-termTransmissionPlan-Final.pdf?zoom=100"
+                    style="position: absolute; height: 98%; width: 99%" frameborder="0">
+                </iframe> -->
+            </div>
+            <div id="tab_0">
+                <button type="button" class="collapsible">FAQ Answers</button>
+                <div class="content">
+                    <iframe src="./doc/faq1.html" frameborder="0" height="70%" width="98%"></iframe>
+                </div>
+                <button type="button" class="collapsible">Features to be built ...</button>
+                <div class="content">
+                    <iframe src="./doc/todo1.html" frameborder="0" height="90%" width="100%"></iframe>
+                </div>
+            
+                <button type="button" class="collapsible">About this application</button>
+                <div class="content">
+                    <iframe src="./doc/about1.html" frameborder="0" height="75%" width="98%"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui-layout-north"><b>A Simple Model to understand Social & Politic</b> 
+            <span style="float:right"><a href="mailto:ming.hu@aeso.ca?Subject= ... about SPA hourly data" target="_top">E-Mail</a> for question or feedback ...</span>
+    </div>
+    <div class="ui-layout-south" id='msg'>messages</div>
+    <div class="ui-layout-east">
+    </div>
+    <div class="ui-layout-west" id="www">West
+    </div>
+    <script src="./frame.js"></script>
+    <script src="./data.js"></script>
+    <script src="./curve.js"></script>
+    <!-- <script src="./group.js"></script> -->
+    
+    <script>  // for folding div
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
