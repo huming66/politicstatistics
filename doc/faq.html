@@ -1,0 +1,64 @@
+<style>
+	k2 {
+		color: blue;
+		font-size: 18px;
+	}
+
+	body {
+		background-color: #e6fff7;
+	}
+</style>
+<k2>
+	<ul>
+		<li>Always use Google Chrome as the browser to open&nbsp;<a href="http://prodhpcts01/spa" target="_blank"
+				rel="noopener">http://prodhpcts01/spa</a>&nbsp;</li>
+		<li>Locating a measurement
+			<ul>
+				<li>use the "Region > Area > Station > Elemnet" hierarchy at the left</li>
+				<li>use the Measurement hierarchy at the right</li>
+				<li>search any chracters in name of Region, Area, Station and Elemnet ... support "regular expression"
+				</li>
+				<li>search any chracters in name of measures ... support "regular expression" ... e.g. .* .+ \d{3}
+					[0-9]{3} \w{3} [A-z]{3} ... )</li>
+			</ul>
+		</li>
+		<li>Select measure(s) for charting
+			<ul>
+				<li>select by single click (toggle) on (one or miltiple) the name of measure (NOT the [+] sign) will
+					bring the data on chart</li>
+				<li>select the type of chart (scatter chart need two measures selected) </li>
+				<li>check the aggregate will remove all individue measure, and only keep the aggregate summation</li>
+				<li>single click (toggle) on the [+] sign will change the sign of the measure data</li>
+				<li>different aggregation calculation ... dropdown list and user-defined formula</li>
+
+			</ul>
+		</li>
+		<li>Data export
+			<ul>
+				<li>only for time series data</li>
+				<li>to a local CSV file with timestamp</li>
+			</ul>
+		</li>
+		<li>user-defined formula for aggregation calculation for miltiple measurements
+			<ul>
+				<li>support <a href="https://www.w3schools.com/jsref/jsref_obj_math.asp" target="_blank" rel="noopener">JavaScript built-in functions</a>    </li>
+				<li>use array v to represnt the selected measures ... e.g. v[0] the 1st measure, v[1] the 2nd measure ...</li>
+				<li>example: Math.max(...v) return the max measure in array v (for each point of time)</li>
+			</ul>
+		</li>
+		<li>Data of other measures
+			<ul>
+				<li>As a starting point, this only includes hourly MW of all asset generation and flow of all lines</li>
+				<li>on-the-fly hourly data download (2013 to 2019 for now) for all listed PI-tags</li>
+				<li>Other data can be added as required ... </li>
+			</ul>
+		</li>
+		<li>When data is not refreshing
+			<ul>
+				<li>Refresh browser; if still not working, then</li>
+				<li>Clear Chrome memory cache: [Ctrl + F5]; if still not working, then</li>
+				<li>Clear Chrome disk cache: Setting &gt; Advanced &gt; Privacy and security &gt; Clear browsing data
+					&gt; Clear data</li>
+			</ul>
+		</li>
+</k2>

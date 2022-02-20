@@ -1,0 +1,152 @@
+svg {
+    border: 1px solid lightgray
+}
+.each {
+    stroke-width : 0;
+    stroke: black;
+    fill: none;
+}
+.each:hover {
+    stroke-width : 0.01;
+    fill: rgb(212, 214, 216);
+}
+
+#tab_1 {
+    display: flex;
+}
+#svg0 {
+    width: 600px;
+    height: 600px;
+}
+#smallSVGs {
+    width: 50%;
+}
+#smallSVGs svg{ 
+    float: left;
+    border: solid 0px grey;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    height: 300px;
+    width: 300px;
+    background-color:lightgrey;
+}
+#smallSVGs svg:hover{
+    background-color:white;
+}
+
+.half .f_3rd {
+    stroke-width : 0.05;
+    stroke: black;
+    fill-opacity: 0.05;   
+}
+.one .f_2nd, .one .f_3rd {
+    stroke-width : 0.05;
+    stroke: black;
+    fill-opacity: 0.05;   
+}
+
+#note {
+    font-size: 18px;
+    background: rgb(235, 234, 234);     
+}
+
+
+#svgCurve { 
+    float: left;
+    border: solid 1px grey;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    height: 600px;
+    width: 1200px;
+    /* background-color:rgb(216, 29, 29); */
+}
+
+
+
+
+
+
+
+.tagOff {
+    font-size: 11px;
+    /* text-decoration: line-through;  */
+    /* background: #d4d3d3;  */
+    text-align:right;
+}
+.tagOn {
+    font-size: 12px;
+    background: #37b4fc59; 
+}
+
+.tagSignP {
+    font-family:"Courier New", Courier, monospace;
+    background: #37b4fc59; 
+}
+.tagSignN {
+    font-family:"Courier New", Courier, monospace;
+    background: yellow; 
+}
+.tagOk {
+    font-size: 12px;
+    color: blue; 
+}
+.tagGrey {
+    font-size: 12px;
+    color: grey; 
+}
+
+
+.jqx-cell {
+    min-height: 12px;
+    padding: 0px 0px;
+    margin: 0;
+    border-collapse: separate;
+    border-spacing: 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 1px solid transparent;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    white-space: normal;
+    line-height: 1.231;
+    color: blue;
+}
+
+.collapsible {
+    background-color: rgb(104, 191, 212);
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 12px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: rgb(45, 148, 189);
+  }
+  
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+
+k1 {
+    color: blue;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+k2 {
+    color: blue;
+    font-size: 20px;
+    /* font-weight: bold; */
+}

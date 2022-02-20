@@ -1,0 +1,262 @@
+{
+    "root": {
+        "data": {
+            "id": "c3005lqa8n40",
+            "created": 1590429360549,
+            "text": "SPA"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c302cnyn12o0",
+                    "created": 1590435556177,
+                    "text": "data",
+                    "expandState": "expand",
+                    "layout_mind_offset": {
+                        "x": -15,
+                        "y": -2
+                    },
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c302cuugpmg0",
+                            "created": 1590435571162,
+                            "text": "configuration",
+                            "note": "h:/gerrit/grea/PyWeb/data",
+                            "layout": null,
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c302gb72tfs0",
+                                    "created": 1590435841846,
+                                    "text": "measure",
+                                    "expandState": "expand",
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c302cylxt400",
+                                            "created": 1590435579354,
+                                            "text": "mat_pitag2.json",
+                                            "expandState": "expand",
+                                            "note": "{\n\"area\": \"unmapped\",\n\"rg1\": \"unmapped\",\n\"rg2\": \"unmapped\",\n\"area#\": -1,\n\"sub\": \"ATCHLITZ\",\n\"cmp\": \".T2\",\n\"type\": \"X\",\n\"mType\": \"P\",\n\"tag\": \"EMS:ATCHLITZ.XF.T2.P@SCADA!AV\"\n},",
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c302i95f1tc0",
+                                            "created": 1590435994120,
+                                            "text": "voltage_pitag.json",
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c302f1267vk0",
+                                            "created": 1590435741417,
+                                            "text": "pitag_gui.json",
+                                            "expandState": "expand",
+                                            "note": "{\n\"area\": \"AIES\",\n\"rg1\": \"AIES\",\n\"rg2\": \"AIES\",\n\"area#\": 9999,\n\"sub\": \"AIES\",\n\"cmp\": \"AIES.ctrl\",\n\"type\": \"ctrl\",\n\"mType\": \"ACE\",\n\"tag\": \"EMS:AIES.SYSTEM.AESO.NACE@SCADA!AV\"\n}",
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c302h2tel9c0",
+                                    "created": 1590435901969,
+                                    "text": "aggregation",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c302hbdzgio0",
+                                            "created": 1590435920628,
+                                            "text": "spa.json",
+                                            "expandState": "expand",
+                                            "note": "\"Ellerslie TX\": {\n\"type\": \"Key Point\",\n\"measure\": {\n\"EMS:89S.XF_FR.T1.S@SCADA!AV\": {\n\"calculation\": \"1\",\n\"note\": \"T1\"\n        },\n\"EMS:89S.XF_FR.T2.S@SCADA!AV\": {\n\"calculation\": \"1\",\n\"note\": \"T2\"\n        }\n    },\n\"calculation\": \"v[0]+v[1]\",\n\"note\": \"MVA of 2 transformers @ Ellerslie\"\n}",
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c302jpswuqo0",
+                                    "created": 1590436108734,
+                                    "text": "type mapping",
+                                    "expandState": "expand",
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c302jtwu3sw0",
+                                            "created": 1590436117678,
+                                            "text": "tagType.json",
+                                            "expandState": "expand",
+                                            "note": "{\n\"type\": \"generator\",\n\"mType\": \"MW\",\n\"tag\": \"EMS:*.UN.**.P@SCADA!AV\",\n\"splt\": {\n\"sub\": 1,\n\"cmp\": 3,\n\"type\": \"G\",\n\"mType\": \"P\"\n}\n}",
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c302kmvnd6o0",
+                                    "created": 1590436180733,
+                                    "text": "location mapping",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c302l06iwio0",
+                                            "created": 1590436209689,
+                                            "text": "tagRemap.json",
+                                            "expandState": "expand",
+                                            "note": "{\n\"sub\": \"ANNA_WTP\",\n\"area\": \"WSCC\",\n\"rg1\": \"WECC\",\n\"rg2\": \"WECC\",\n\"area#\": \"15\"\n}",
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c302n19l0o80",
+                                    "created": 1590436368780,
+                                    "text": "group mapping",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c302n4ya8m80",
+                                            "created": 1590436376803,
+                                            "text": "tagMask.json",
+                                            "expandState": "expand",
+                                            "note": "{\n\"lv1\": \"generation\",\n\"mask\": \"ASSET.ABCI\",\n\"lv2\": \"~CSD\",\n\"lv3\": \"NA\"\n}",
+                                            "layout": null
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c302q6rlb6g0",
+                            "created": 1590436615844,
+                            "text": "cashed",
+                            "layout": null,
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c3036oxjwew0",
+                                    "created": 1590437909213,
+                                    "text": "2013-2019",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c302r1jp01k0",
+                                            "created": 1590436682847,
+                                            "text": "mat files",
+                                            "note": "T:/Technical/te/97/SystemPerformence/Transmission/matlab/m/mat/",
+                                            "expandState": "expand",
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c302r4tqb140",
+                                                    "created": 1590436689984,
+                                                    "text": "7hY_v8_202001_2.mat",
+                                                    "note": "for MW\n",
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c302y3tui200",
+                                                    "created": 1590437236363,
+                                                    "text": "7hY_v8_202001_tx.mat",
+                                                    "note": "for transformer",
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c302y4esmzk0",
+                                                    "created": 1590437237630,
+                                                    "text": "7hY_v8_202001_ld.mat",
+                                                    "note": "for L\noad",
+                                                    "layout": null
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c30338feyuw0",
+                                            "created": 1590437638196,
+                                            "text": "feather",
+                                            "note": "D:/www/spa/data/"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c3035095hig0",
+                                                    "created": 1590437777131,
+                                                    "text": "cached.fth",
+                                                    "note": "for data not in mat files"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c3037gwfzc80",
+                                    "created": 1590437970096,
+                                    "text": "2020_",
+                                    "note": "monthly ca"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "classic",
+    "version": "1.4.43"
+}
